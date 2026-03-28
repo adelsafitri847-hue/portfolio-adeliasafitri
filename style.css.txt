@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI';
+  background: #0f172a;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: black;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px;
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+}
+
+.btn {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+.foto {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.sosial a {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+}
+
+.wa { background: #25D366; }
+.ig { background: #E1306C; }
+.email { background: #FF5733; }
+
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
